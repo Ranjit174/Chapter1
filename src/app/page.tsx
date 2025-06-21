@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Industrial Control Panel Manufacturer | Custom Control Panel Builder | PanelTEK',
+  title: 'Indus Control Panel Manufacturer | Custom Control Panel Builder | PanelTEK',
   description: 'Leading industrial control panel manufacturer specializing in custom control panel design, UL 508A listed fabrication, and electrical engineering services.',
   keywords: ['industrial control panel manufacturer', 'custom control panel builder', 'UL 508A panel shop', 'electrical engineering services', 'control panel fabrication'],
   alternates: {
@@ -18,7 +18,7 @@ export default function Home() {
         <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-16 lg:py-24 relative overflow-hidden">
             <div className="absolute inset-0 bg-black opacity-10"></div>
             <div className="container mx-auto px-4 text-center relative z-10">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in">
                 Industrial Control Panel<br />
                 <span className="text-orange-400 bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent">
                   Manufacturer
@@ -75,7 +75,7 @@ export default function Home() {
               </h2>
               <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="bg-gray-200 h-80 lg:h-96 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                  <div className="bg-gray-200 h-64 sm:h-80 lg:h-96 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
                     <Image
                       src="/api/placeholder/600/400"
                       alt="PanelTEK engineers working on control panel design"
@@ -138,7 +138,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <div className="bg-gray-200 h-80 lg:h-96 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                  <div className="bg-gray-200 h-64 sm:h-80 lg:h-96 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
                     <Image
                       src="/api/placeholder/600/400"
                       alt="UL 508A listed panel shop manufacturing facility"
@@ -161,7 +161,7 @@ export default function Home() {
                 {[
                   "Allen-Bradley", "Schneider Electric", "Siemens", "ABB"
                 ].map((partner, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg w-48 h-28 flex items-center justify-center border border-gray-200 shadow-sm hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+                  <div key={index} className="bg-white p-6 rounded-lg w-full h-28 flex items-center justify-center border border-gray-200 shadow-sm hover:shadow-xl hover:scale-105 transform transition-all duration-300">
                     <span className="text-gray-700 text-base font-semibold text-center">{partner}</span>
                   </div>
                 ))}
@@ -175,7 +175,7 @@ export default function Home() {
             <div className="container mx-auto px-4 relative z-10">
               <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="bg-blue-600 bg-opacity-30 h-80 lg:h-96 rounded-xl flex items-center justify-center shadow-2xl overflow-hidden">
+                  <div className="bg-blue-600 bg-opacity-30 h-64 sm:h-80 lg:h-96 rounded-xl flex items-center justify-center shadow-2xl overflow-hidden">
                     <Image
                       src="/api/placeholder/600/400"
                       alt="Industrial control panel assembly at PanelTEK facility"
