@@ -9,116 +9,259 @@ export const metadata: Metadata = {
 };
 
 const EngineeringServicesPage = () => {
+  const services = [
+    {
+      title: "Electrical Engineering",
+      description: "Expert design and layout of industrial control panels to your exact specifications. Our AutoCAD electrical schematic design ensures precision and compliance with industry standards.",
+      image: "https://images.unsplash.com/photo-1581092921462-699de70c3b8a?q=80&w=800&auto=format&fit=crop",
+      features: [
+        "UL, NFPA70, NFP79, and CE Mark compliance",
+        "AutoCAD electrical schematics",
+        "Optimized component selection and pricing",
+        "Power distribution design",
+        "Safety system integration"
+      ]
+    },
+    {
+      title: "Control & Automation",
+      description: "Advanced control panel design and programming using industry-leading technologies and best practices for maximum operational efficiency and reliability.",
+      image: "https://images.unsplash.com/photo-1633493725743-d853a18d23e9?q=80&w=800&auto=format&fit=crop",
+      features: [
+        "Allen-Bradley/Rockwell Automation PLC Programming",
+        "VFD and soft start integration",
+        "Ignition partnership for sustainable processes",
+        "Motion control systems",
+        "Process optimization"
+      ]
+    },
+    {
+      title: "Software Engineering",
+      description: "Over 60 years of combined experience with cutting-edge automation software and HMI solutions tailored to your specific industry requirements.",
+      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop",
+      features: [
+        "Rockwell FactoryTalk Machine & Server Edition",
+        "Ignition Gold Certified Integration",
+        "Custom HMI/OIT solutions",
+        "SCADA system development",
+        "Real-time data analytics"
+      ]
+    }
+  ];
+
+  const stats = [
+    { number: "100+", label: "Years Combined Experience" },
+    { number: "500+", label: "Projects Completed" },
+    { number: "24/7", label: "Support Available" },
+    { number: "99.9%", label: "Uptime Guarantee" }
+  ];
+
+  const capabilities = [
+    { title: "Custom Integration", desc: "Tailored solutions for unique industrial requirements" },
+    { title: "AutoCAD Electrical", desc: "Precision design and comprehensive documentation" },
+    { title: "PLC Programming", desc: "Allen-Bradley certified expertise and implementation" },
+    { title: "Project Management", desc: "Dedicated support throughout project lifecycle" },
+    { title: "Quality Assurance", desc: "Comprehensive validation and verification processes" },
+    { title: "Technical Support", desc: "Ongoing maintenance and troubleshooting services" }
+  ];
+
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-800 to-blue-600 text-white py-20 lg:py-28 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in">
-            We’ve Got Your Control Panel Engineering Services Covered
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-blue-100">
-            Leverage our 100+ years of combined experience for your electrical engineering projects.
-          </p>
+      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-24">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <span className="inline-block px-4 py-2 bg-blue-600 text-white rounded text-sm font-medium">
+                Industry-Leading Engineering Solutions
+              </span>
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Comprehensive Control Panel
+              <span className="block text-blue-400">Engineering Services</span>
+            </h1>
+            
+            <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+              Transform your industrial automation with our 100+ years of combined expertise. 
+              From design to deployment, we deliver professional engineering solutions.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact-us" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold text-lg transition-colors duration-300">
+                Request Consultation
+              </Link>
+              <Link href="#services" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded font-semibold text-lg transition-all duration-300">
+                View Services
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Main Content Section */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 max-w-4xl space-y-8">
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Can you use added insights when you’re working on electrical engineering projects? Would it help you to work with an engineering team with proven practices and over 100 years of combined experience? Choose iAutomation as your single source for all your electrical engineering needs, including design, layout, programming, system start-up, documentation services, support, and project maintenance.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            iAutomation engineers can work as an extension of your team, providing much needed support from design, layout, and programming to system start-up, project management, and custom builds.
-          </p>
-
-          <div className="pt-8">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Proven Engineering Services for Control Panel Design</h2>
-            
-            <div className="space-y-16">
-              {/* Electrical Engineering Section */}
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="prose prose-lg max-w-none">
-                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">Electrical Engineering</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    We’ll design and layout your industrial control panels per specifications or your drawings/design. We also do AutoCAD drafting electrical schematics design—a powerful tool in expert hands. We design compliant with UL, NFPA70, NFP79, and CE Mark standards to eliminate equipment failure, downtime, and ensure worker safety. Engineering works closely with our dedicated purchasing department to assure best pricing, availability, and support from our supply chain partners.
-                  </p>
+      {/* Stats Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
+                  {stat.number}
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                  <Image src="https://images.unsplash.com/photo-1581092921462-699de70c3b8a?q=80&w=800&auto=format&fit=crop" alt="Electrical Engineering Schematics" width={600} height={400} className="w-full h-full object-cover" />
+                <div className="text-sm md:text-base text-gray-600 font-medium">
+                  {stat.label}
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-              {/* Control/Automation Engineering Section */}
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="rounded-lg overflow-hidden shadow-xl md:order-last transform hover:scale-105 transition-transform duration-300">
-                  <Image src="https://images.unsplash.com/photo-1633493725743-d853a18d23e9?q=80&w=800&auto=format&fit=crop" alt="Control and Automation Engineering" width={600} height={400} className="w-full h-full object-cover" />
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Engineering Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive solutions tailored to your specific industrial automation needs
+            </p>
+          </div>
+
+          {/* Professional Card Grid */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {services.map((service, index) => (
+              <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <div className="relative h-48">
+                  <Image 
+                    src={service.image}
+                    alt={service.title}
+                    width={400} 
+                    height={200} 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
-                <div className="prose prose-lg max-w-none md:order-first">
-                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">Control/Automation Engineering</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Whether you need us for your control panel design, or we build your design to spec, we build electrical control panels based on best practices of UL/CE/NEC and more. We’ll identify the best technologies and components for the application. We are proficient in Allen-Bradley/Rockwell Automation PLC Programming, VFD, soft starts, and more. We also partner with Ignition to create a sustainable process and function.
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {service.description}
                   </p>
+                  
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 text-sm uppercase tracking-wide">
+                      Key Capabilities
+                    </h4>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start">
+                          <svg className="w-4 h-4 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                          <span className="text-gray-700 text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-              {/* Software Engineering Section */}
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="prose prose-lg max-w-none">
-                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">Software Engineering</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    We have over 60 combined years of experience with Rockwell Automation Software—both FactoryTalk Machine Edition and Server Edition. We’re Ignition Gold Certified Integrators who work with Ignition SCADA—a highly flexible software with built-in reporting, alarming, recipe management, and more. With our vast experience in an array of industries, we utilize the best HMI/OIT for your specific needs.
+      {/* Capabilities Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Complete Project Support
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From initial consultation to ongoing maintenance, we provide comprehensive engineering support
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {capabilities.map((capability, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {capability.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {capability.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Engineering Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              A systematic approach to delivering exceptional engineering solutions
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8">
+              {[
+                { step: "01", title: "Consultation", desc: "Understanding your requirements and objectives" },
+                { step: "02", title: "Design", desc: "Creating detailed engineering specifications" },
+                { step: "03", title: "Implementation", desc: "Professional installation and programming" },
+                { step: "04", title: "Support", desc: "Ongoing maintenance and optimization" }
+              ].map((phase, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    {phase.step}
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {phase.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {phase.desc}
                   </p>
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-                  <Image src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Software Engineering and Development" width={600} height={400} className="w-full h-full object-cover" />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="pt-8">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Additional electrical engineering services & capabilities include:</h3>
-            <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
-              <li>Custom integration</li>
-              <li>AutoCAD Electrical</li>
-              <li>Allen-Bradley PLC programming</li>
-              <li>Certified/Tenured Engineering Staff</li>
-              <li>Dedicated Project Management</li>
-              <li>Dedicated Purchasing</li>
-            </ul>
-          </div>
-
-          <div className="pt-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Control Panel Engineering Services You Can Rely On</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our engineering group has industry experience, and they are dedicated to helping you meet the demands of the markets you serve. No project is too large or too small. From prototypes to full production, operator stations to multi-door control cabinets, we have the knowledge and expertise to handle it all. We maintain all the appropriate industry certifications and standards. Our capabilities reach across technology platforms and we have the necessary facilities and staff to handle your most demanding applications. We are dedicated to being your long-term partner and we have invested in the resources to make that possible.
+      {/* CTA Section */}
+      <section className="py-20 bg-slate-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Start Your Project?
+            </h2>
+            <p className="text-xl mb-8 text-gray-300">
+              Our engineering team is ready to discuss your automation requirements and provide expert guidance.
             </p>
-            <h3 className="text-2xl font-semibold text-gray-800 mt-6 mb-4">Control panel engineering services include:</h3>
-            <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
-              <li>Assembly by trained & experienced teams</li>
-              <li>Design/Layout/Build</li>
-              <li>Outsource for overflow</li>
-              <li>Cost saving solutions and options</li>
-              <li>Final testing of all control panels</li>
-              <li>Power on</li>
-              <li>Continuity</li>
-              <li>Torque</li>
-            </ul>
-          </div>
-
-          <div className="pt-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Electrical Engineering Support through a Strategic Partnership Approach</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              iAutomation offers customer-focused solutions, detailed project management, custom integration, and options for cost saving strategies while adhering to industry best practices.  Email us or call us today to see how our team can assist you with delivering your project on time and on budget. Tell us what you need—our engineers love to listen and then get to work designing you what you didn’t even know you needed. Let us know what we can do to exceed your expectations.
-            </p>
-          </div>
             
-          <div className="mt-12 text-center">
-            <Link href="/contact-us" className="inline-block bg-orange-600 text-white px-10 py-4 rounded-lg font-bold hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Contact Our Engineers
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact-us" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold text-lg transition-colors duration-300">
+                Schedule Consultation
+              </Link>
+              <Link href="/portfolio" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded font-semibold text-lg transition-all duration-300">
+                View Portfolio
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,127 @@
+// Data for industrial automation news articles
+export const industrialNewsData = [
+  {
+    id: 1,
+    title: 'Global PLC Market Experiences Unprecedented $3.01B Growth Surge',
+    date: 'February 15, 2025',
+    excerpt: 'The global PLC market is experiencing unprecedented growth, with projections showing a $3.01 billion increase from 2025-2029. This surge is driven by the increasing demand for compact automation solutions and AI integration in industrial processes, revolutionizing manufacturing efficiency across all sectors.',
+    fullContent: 'The global PLC market is on a trajectory of remarkable expansion, with market analysts projecting a staggering $3.01 billion growth between 2025 and 2029. This significant surge is primarily fueled by two key factors: the escalating demand for compact automation solutions across various industries and the increasing integration of Artificial Intelligence (AI) in industrial processes. As manufacturers seek to optimize space and enhance efficiency, the adoption of smaller, more powerful PLCs is becoming widespread. Simultaneously, AI-driven analytics are enabling predictive maintenance, optimizing production workflows, and minimizing downtime, thereby revolutionizing manufacturing efficiency on a global scale. This trend is set to redefine the landscape of industrial automation, creating new opportunities for innovation and growth.',
+    slug: 'plc-market-growth-2025',
+    category: 'Market Analysis',
+    tags: ['PLC', 'Market Growth', 'AI Integration', 'Automation'],
+  },
+  {
+    id: 2,
+    title: 'Industry 5.0: The Next Evolution in Sustainable Manufacturing',
+    date: 'March 10, 2025',
+    excerpt: 'Industry 5.0 emerges as a pivotal trend focusing on environmental sustainability and human-machine integration. Unlike Industry 4.0\'s automation focus, this evolution emphasizes collaborative intelligence and sustainable manufacturing practices, creating a new paradigm for industrial operations.',
+    fullContent: 'Industry 5.0 represents a significant evolution from its predecessor, Industry 4.0. While Industry 4.0 centered on automation and data exchange, Industry 5.0 shifts the focus towards a more human-centric and sustainable approach to manufacturing. This new paradigm emphasizes the seamless integration of human ingenuity with the cognitive, analytical power of machines. The core principle of Industry 5.0 is to foster collaborative intelligence, where humans and AI work in tandem to solve complex problems and drive innovation. Furthermore, there is a strong emphasis on environmental sustainability, with a push for green manufacturing practices, circular economy principles, and the reduction of carbon footprints. This evolution is not just about technology; it\'s about creating a more resilient, sustainable, and human-centered industrial ecosystem.',
+    slug: 'industry-5-0-evolution',
+    category: 'Technology Trends',
+    tags: ['Industry 5.0', 'Sustainability', 'Human-AI Collaboration', 'Green Manufacturing'],
+  },
+  {
+    id: 3,
+    title: 'IoT Manufacturing Revolution: AI-Driven Analytics Transform Production',
+    date: 'January 28, 2025',
+    excerpt: 'Industrial IoT continues reshaping manufacturing with advanced solutions improving efficiency and reducing costs. AI-driven analytics now predict machine failures and optimize production schedules with unprecedented accuracy, leading to significant operational improvements across industries.',
+    fullContent: 'The Industrial Internet of Things (IIoT) is continuing its revolutionary impact on the manufacturing sector, with advanced solutions that significantly enhance efficiency and drive down operational costs. The latest development in this domain is the integration of AI-driven analytics, which has transformed production capabilities. These sophisticated algorithms can now predict potential machine failures with remarkable accuracy, allowing for proactive maintenance and minimizing costly downtime. Moreover, AI-powered analytics are being used to optimize production schedules in real-time, responding to changing demands and supply chain dynamics. The result is a more agile, efficient, and cost-effective manufacturing process, with significant operational improvements being reported across a wide range of industries.',
+    slug: 'iot-manufacturing-revolution',
+    category: 'IoT & Analytics',
+    tags: ['IoT', 'Predictive Analytics', 'Smart Manufacturing', 'Cost Reduction'],
+  },
+  {
+    id: 4,
+    title: 'Electrical Control Panel Innovation: Enhanced Monitoring Capabilities',
+    date: 'February 05, 2025',
+    excerpt: 'Modern electrical control panels are becoming more sophisticated with enhanced monitoring capabilities and improved reliability. These systems are essential for industrial automation, providing higher-level control of production machinery with advanced diagnostic features and remote monitoring capabilities.',
+    fullContent: 'Electrical control panels, the nerve centers of industrial automation, are undergoing a significant transformation. The latest innovations in this field are focused on enhancing monitoring capabilities and improving overall system reliability. Modern control panels are now equipped with advanced sensors and diagnostic features that provide real-time insights into the health and performance of production machinery. This allows for early detection of potential issues, reducing the risk of unexpected failures. Furthermore, remote monitoring capabilities have become a standard feature, enabling engineers to access and manage control systems from anywhere in the world. These advancements are providing a higher level of control and precision in industrial automation, leading to safer and more efficient operations.',
+    slug: 'electrical-control-panel-innovation',
+    category: 'Control Systems',
+    tags: ['Control Panels', 'Monitoring', 'Reliability', 'Diagnostics'],
+  },
+  {
+    id: 5,
+    title: 'Edge Computing Integration Transforms Industrial Automation',
+    date: 'March 01, 2025',
+    excerpt: 'Edge computing is transforming industrial automation by enabling real-time data processing at the source. This technology reduces latency and improves decision-making in critical manufacturing processes, offering unprecedented speed and efficiency in industrial operations.',
+    fullContent: 'Edge computing is rapidly emerging as a transformative technology in the industrial automation landscape. By enabling data processing to occur at the source—closer to the machines and sensors on the factory floor—edge computing effectively minimizes latency and accelerates decision-making in critical manufacturing processes. This is a significant departure from traditional cloud-based models, where data has to travel to a centralized server for processing. The reduction in latency is particularly crucial for applications that require real-time responses, such as robotic control and quality assurance. The integration of edge computing is offering unprecedented levels of speed, efficiency, and autonomy in industrial operations, paving the way for the next generation of smart factories.',
+    slug: 'edge-computing-industrial-automation',
+    category: 'Edge Computing',
+    tags: ['Edge Computing', 'Real-time Processing', 'Low Latency', 'Manufacturing'],
+  },
+  {
+    id: 6,
+    title: 'Digital Twins Revolution: Virtual Replicas Optimize Manufacturing',
+    date: 'February 20, 2025',
+    excerpt: 'Digital twins are revolutionizing manufacturing by creating virtual replicas of physical systems. This technology enables better predictive maintenance, process optimization, and reduces downtime significantly, providing manufacturers with powerful tools for operational excellence.',
+    fullContent: 'The concept of digital twins is revolutionizing the manufacturing industry by creating highly detailed and dynamic virtual replicas of physical systems. This cutting-edge technology allows manufacturers to simulate, analyze, and optimize their production processes in a virtual environment before implementing changes in the real world. One of the most significant benefits of digital twins is in the realm of predictive maintenance. By analyzing data from the physical asset, the digital twin can predict potential failures and schedule maintenance proactively, thus reducing unplanned downtime. Furthermore, digital twins are powerful tools for process optimization, enabling manufacturers to test different scenarios and identify the most efficient operational strategies. This technology is providing a clear path towards operational excellence and a more resilient manufacturing future.',
+    slug: 'digital-twins-manufacturing',
+    category: 'Digital Technology',
+    tags: ['Digital Twins', 'Predictive Maintenance', 'Process Optimization', 'Virtual Systems'],
+  },
+  {
+    id: 7,
+    title: 'Industrial Software Market Reaches $355B by 2030 Forecast',
+    date: 'January 15, 2025',
+    excerpt: 'The industrial software market reached $146 billion in 2023 and is forecasted to reach $355 billion by 2030, with cloud infrastructure driving significant growth in automation solutions. This explosive growth reflects the increasing digitization of manufacturing processes worldwide.',
+    fullContent: 'The industrial software market is experiencing a period of explosive growth, reflecting the rapid digitization of manufacturing processes across the globe. According to a recent market analysis, the market, which was valued at $146 billion in 2023, is forecasted to more than double, reaching an estimated $355 billion by 2030. A key driver of this growth is the widespread adoption of cloud infrastructure, which is enabling more scalable, flexible, and cost-effective automation solutions. As industries continue to embrace digital transformation, the demand for sophisticated industrial software—from SCADA systems to manufacturing execution systems (MES)—is expected to soar. This trend underscores the critical role that software now plays in modern manufacturing, driving efficiency, innovation, and competitive advantage.',
+    slug: 'industrial-software-market-forecast',
+    category: 'Market Analysis',
+    tags: ['Industrial Software', 'Market Growth', 'Cloud Infrastructure', 'Digitization'],
+  },
+  {
+    id: 8,
+    title: '5G Technology Enables Real-Time Industrial Communication',
+    date: 'March 05, 2025',
+    excerpt: '5G technology is enabling new possibilities in industrial automation, supporting real-time communication and enhanced connectivity for smart factory operations. This advancement is crucial for the next generation of manufacturing systems requiring ultra-low latency and high reliability.',
+    fullContent: 'The rollout of 5G technology is set to unlock a new wave of possibilities in the industrial automation sector. With its ultra-low latency and high-reliability communication capabilities, 5G is providing the enhanced connectivity required for the next generation of smart factory operations. This technology is a critical enabler for applications that demand real-time data transmission, such as autonomous mobile robots, augmented reality for maintenance, and high-precision remote control of machinery. The ability of 5G to support a massive number of connected devices simultaneously also makes it ideal for large-scale IoT deployments in industrial environments. As 5G networks become more widespread, they will play a pivotal role in creating more connected, intelligent, and efficient manufacturing systems.',
+    slug: '5g-industrial-communication',
+    category: 'Connectivity',
+    tags: ['5G Technology', 'Real-time Communication', 'Smart Factories', 'Connectivity'],
+  },
+  {
+    id: 9,
+    title: 'Cybersecurity Evolution in Connected Industrial Systems',
+    date: 'February 25, 2025',
+    excerpt: 'As industrial systems become more connected, cybersecurity measures are evolving to protect critical infrastructure and maintain operational continuity. New security frameworks and protocols are being developed to address the unique challenges of industrial environments.',
+    fullContent: 'The increasing connectivity of industrial systems, while offering numerous benefits, also introduces new cybersecurity vulnerabilities. In response, the field of industrial cybersecurity is rapidly evolving to protect critical infrastructure and ensure operational continuity. Traditional IT security measures are often inadequate for the unique challenges of industrial environments, where operational technology (OT) systems have different priorities and constraints. As a result, new security frameworks and protocols are being developed specifically for the OT domain. These include measures such as network segmentation, anomaly detection, and secure remote access solutions. The focus is on building a multi-layered defense strategy that can detect, respond to, and recover from cyber threats, safeguarding the integrity and availability of industrial processes.',
+    slug: 'cybersecurity-industrial-systems',
+    category: 'Cybersecurity',
+    tags: ['Cybersecurity', 'Industrial Security', 'Connected Systems', 'Infrastructure Protection'],
+  },
+  {
+    id: 10,
+    title: 'Autonomous Manufacturing: The Future of Production Systems',
+    date: 'March 12, 2025',
+    excerpt: 'Rapid digitization and skilled labor shortages are accelerating the adoption of automated solutions and intelligent manufacturing systems. Autonomous manufacturing plants that self-optimize production and predict maintenance needs are becoming a reality.',
+    fullContent: 'The convergence of rapid digitization, AI, and a growing shortage of skilled labor is accelerating the move towards autonomous manufacturing. This futuristic vision of production involves manufacturing plants that can self-optimize their operations, predict maintenance needs, and adapt to changing conditions with minimal human intervention. These intelligent manufacturing systems leverage a vast network of sensors, data analytics, and machine learning algorithms to create a self-aware and self-regulating production environment. While fully autonomous plants are still in the early stages of development, the foundational technologies are already being implemented. The trend towards autonomous manufacturing promises to deliver unprecedented levels of efficiency, flexibility, and resilience, shaping the future of production systems worldwide.',
+    slug: 'autonomous-manufacturing-future',
+    category: 'Future Technology',
+    tags: ['Autonomous Manufacturing', 'Intelligent Systems', 'Self-optimization', 'Future Technology'],
+  },
+];
+
+// Market statistics data
+export const marketStats = [
+  { label: 'Industrial Software Market by 2030', value: '$355B' },
+  { label: 'Annual Growth Rate', value: '13.5%' },
+  { label: 'Manufacturers Using IoT', value: '62%' },
+  { label: 'PLC Market Growth 2025-2029', value: '$3.01B' },
+];
+
+// Category colors mapping
+export const getCategoryColor = (category: string) => {
+  const colors: { [key: string]: string } = {
+    'Market Analysis': 'bg-blue-100 text-blue-800',
+    'Technology Trends': 'bg-green-100 text-green-800',
+    'IoT & Analytics': 'bg-purple-100 text-purple-800',
+    'Control Systems': 'bg-orange-100 text-orange-800',
+    'Edge Computing': 'bg-indigo-100 text-indigo-800',
+    'Digital Technology': 'bg-pink-100 text-pink-800',
+    'Connectivity': 'bg-teal-100 text-teal-800',
+    'Cybersecurity': 'bg-red-100 text-red-800',
+    'Future Technology': 'bg-yellow-100 text-yellow-800',
+  };
+  return colors[category] || 'bg-gray-100 text-gray-800';
+};
