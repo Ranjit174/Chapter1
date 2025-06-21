@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Indus Control Panel Manufacturer | Custom Control Panel Builder | PanelTEK',
+  title: 'Industrial Control Panel Manufacturer | Custom Control Panel Builder | PanelTEK',
   description: 'Leading industrial control panel manufacturer specializing in custom control panel design, UL 508A listed fabrication, and electrical engineering services.',
   keywords: ['industrial control panel manufacturer', 'custom control panel builder', 'UL 508A panel shop', 'electrical engineering services', 'control panel fabrication'],
   alternates: {
@@ -25,7 +25,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-5xl mx-auto leading-relaxed text-gray-100">
-                What happens when you merge diversity in an array of industries with engineers who have a vast knowledge of electrical control panels? At iAutomation, we create engineering services that are innovative, adaptable, customer-focused, and above all reliable.
+                What happy when you merge diversity in an array of industries with engineers who have a vast knowledge of electrical control panels? At iAutomation, we create engineering services that are innovative, adaptable, customer-focused, and above all reliable.
               </p>
               <div className="bg-blue-800 bg-opacity-70 backdrop-blur-sm p-6 lg:p-8 rounded-xl max-w-4xl mx-auto mb-8 border border-blue-600 shadow-2xl">
                 <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-orange-400">THE RESULT</h2>
