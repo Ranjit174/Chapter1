@@ -152,7 +152,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative max-w-7xl mx-auto hidden md:block">
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
@@ -256,37 +256,16 @@ const Partners = () => {
           </div>
         </div>
 
-        {/* Enhanced Mobile View */}
-        <div className="md:hidden mt-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {partners.map((partner) => (
-              <div key={partner.name} className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-white/20 hover:shadow-xl transition-all duration-300">
-                <div
-                  className={`h-20 flex items-center justify-center relative ${partner.image ? 'bg-white' : partner.brandColor}`}
-                >
-                  {partner.image ? (
-                    <Image src={partner.image} alt={`${partner.name} logo`} layout="fill" objectFit="contain" className="p-1" />
-                  ) : (
-                    <>
-                      <div className="absolute inset-0 opacity-20">
-                        <div className="absolute top-1 right-1 w-8 h-8 border border-white/30 rounded-full"></div>
-                        <div className="absolute bottom-1 left-1 w-4 h-4 border border-white/30 rounded-full"></div>
-                      </div>
-                      <div className="text-white text-2xl font-bold drop-shadow-lg relative z-10">
-                        {partner.textInitials}
-                      </div>
-                    </>
-                  )}
-                </div>
-                <div className="p-4 text-center">
-                  <div className="mb-2">
-                    <span className="inline-block bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 text-xs px-2 py-1 rounded-full font-medium">
-                      {partner.category}
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-slate-800 text-sm mb-1">{partner.name}</h3>
-                  <p className="text-xs text-slate-600">{partner.description}</p>
-                </div>
+        {/* Enhanced Mobile View - Infinite Logo Scroller */}
+        <div className="md:hidden mt-12 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+          <div className="flex w-max animate-scroll">
+            {[...partners, ...partners].map((partner, index) => (
+              <div key={index} className="flex-shrink-0 w-28 h-20 mx-4 flex items-center justify-center">
+                {partner.image ? (
+                  <Image src={partner.image} alt={`${partner.name} logo`} width={100} height={80} objectFit="contain" className="grayscale hover:grayscale-0 transition-all duration-300" />
+                ) : (
+                  <div className="text-slate-400 font-bold text-lg">{partner.textInitials}</div>
+                )}
               </div>
             ))}
           </div>

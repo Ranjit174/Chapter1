@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Discover iAutomation\'s 24+ years of expertise in industrial control panel manufacturing, electrical engineering solutions, and certified quality processes serving diverse industries.',
   keywords: 'industrial control panels, electrical engineering, UL certification, manufacturing, automation solutions',
   openGraph: {
-    title: 'About iAutomation | Industrial Control Panel Excellence',
+    title: 'About IndustrialTEK | Industrial Control Panel Excellence',
     description: 'Leading manufacturer of industrial control panels with 24+ years of experience, certified processes, and proven expertise across multiple industries.',
     type: 'website',
   },
@@ -20,23 +20,56 @@ const AboutUsPage = () => {
   const capabilities = [
     {
       title: 'Advanced Manufacturing',
-      description: '30,000 sq ft climate-controlled facility with overhead cranes and specialized testing stations',
-      icon: '🏭'
+      description: '2000 sq ft facility with overhead cranes and specialized testing stations',
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14 20a2 2 0 1 0-4 0" />
+          <path d="M18 10a2 2 0 1 0-4 0" />
+          <path d="M6 10a2 2 0 1 0-4 0" />
+          <path d="M18 4H6" />
+          <path d="M18 8H6" />
+          <path d="M16 12h-8" />
+          <path d="M12 12H6" />
+          <path d="M16 16H6" />
+          <path d="m14 16 2 4" />
+          <path d="m10 16-2 4" />
+          <path d="M12 8V4" />
+          <path d="m12 20-2-4" />
+          <path d="M12 20 14 16" />
+        </svg>
+      ),
     },
     {
       title: 'Quality Assurance',
       description: 'ISO-based processes with 100% testing protocols ensuring zero-defect delivery',
-      icon: '✓'
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      ),
     },
     {
       title: 'Engineering Excellence',
       description: 'Certified engineering staff providing consultative solutions and design optimization',
-      icon: '⚡'
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </svg>
+      ),
     },
     {
       title: 'Project Management',
       description: 'Detailed project oversight ensuring on-time, on-budget delivery every time',
-      icon: '📋'
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+          <path d="M12 11h4" />
+          <path d="M12 16h4" />
+          <path d="M8 11h.01" />
+          <path d="M8 16h.01" />
+        </svg>
+      ),
     }
   ];
 
@@ -60,7 +93,7 @@ const AboutUsPage = () => {
               <span className="block text-blue-400">Through Experience</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 mb-8 leading-relaxed">
-              24+ years of proven expertise in industrial control panel manufacturing and electrical engineering solutions
+              8+ years of proven expertise in industrial control panel manufacturing and electrical engineering solutions
             </p>
 
           </div>
@@ -97,10 +130,10 @@ const AboutUsPage = () => {
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  iAutomation emerged in 2000 as the dedicated outsource partner for a well-established, large-scale machine tool manufacturer who recognized the need to focus their resources on mechanical design while partnering with electrical engineering specialists.
+                  IndustrialTEK emerged in 2017 as the dedicated outsource partner for a well-established, large-scale machine tool manufacturer who recognized the need to focus their resources on mechanical design while partnering with electrical engineering specialists.
                 </p>
                 <p>
-                  From our strategic location in Fond du Lac, Wisconsin, we rapidly established our reputation for exceptional craftsmanship, unwavering on-time delivery, and meticulous attention to detail. This foundation of excellence has driven our expansion across diverse industrial sectors.
+                  From our strategic location in Coimbatore, Tamilnadu, India. we rapidly established our reputation for exceptional craftsmanship, unwavering on-time delivery, and meticulous attention to detail. This foundation of excellence has driven our expansion across diverse industrial sectors.
                 </p>
               </div>
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border-l-4 border-blue-500">
@@ -113,8 +146,8 @@ const AboutUsPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent rounded-2xl transform rotate-3"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image 
-                  src="/change the eye direction to laptop better preffer specs.jpg" 
-                  alt="iAutomation Industrial Panel Manufacturing Facility" 
+                  src="/SPM__3.jpg" 
+                  alt=" Industrial Panel Manufacturing Facility" 
                   width={600} 
                   height={400} 
                   className="w-full h-full object-cover"
@@ -132,25 +165,44 @@ const AboutUsPage = () => {
                 Comprehensive solutions backed by state-of-the-art facilities and certified expertise
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Desktop Grid */}
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {capabilities.map((capability, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                  <div className="text-3xl mb-4">{capability.icon}</div>
+                <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100/50 transform hover:-translate-y-2 group flex flex-col items-start">
+                  <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-4 rounded-full mb-6 shadow-lg shadow-blue-500/20 text-white transform group-hover:scale-110 transition-transform">
+                    <capability.icon className="w-8 h-8" />
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{capability.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{capability.description}</p>
                 </div>
               ))}
             </div>
+            {/* Mobile Scroller */}
+            <div className="md:hidden -mx-4">
+              <div className="flex overflow-x-auto space-x-6 px-4 pb-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                {capabilities.map((capability, index) => (
+                  <div key={index} className="flex-shrink-0 w-[80%] max-w-[300px] bg-white p-6 rounded-2xl shadow-lg border border-gray-100/50">
+                    <div className="flex items-center mb-4">
+                      <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-3 rounded-full mr-4 shadow-md shadow-blue-500/20 text-white">
+                        <capability.icon className="w-6 h-6" />
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900">{capability.title}</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed text-sm">{capability.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* Facility Excellence */}
+          {/* Innovation Hub */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative lg:order-last">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-transparent rounded-2xl transform -rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent rounded-2xl transform -rotate-3"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image 
-                  src="/just wire the relays in the terminal.jpg" 
-                  alt="iAutomation Engineering Team Collaboration" 
+                  src="/robo.jpg" 
+                  alt="Advanced Engineering Innovation Center" 
                   width={600} 
                   height={400} 
                   className="w-full h-full object-cover"
@@ -158,38 +210,37 @@ const AboutUsPage = () => {
               </div>
             </div>
             <div className="space-y-6 lg:order-first">
-              <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
-                World-Class Facility
+              <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                Innovation Center
               </div>
               <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-                30,000 Square Feet of Manufacturing Excellence
+                Technology Excellence
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Our purpose-built facility represents the pinnacle of modern manufacturing infrastructure. Beginning with our initial 20,000 square foot facility in 2006, we expanded by an additional 10,000 square feet in 2010, incorporating advanced climate control systems and material handling capabilities.
+                  Our state-of-the-art engineering center combines cutting-edge technology with proven methodologies to deliver exceptional automation solutions. Our dedicated R&D facility focuses on emerging technologies, ensuring we stay ahead of industry trends and deliver future-ready solutions to our clients.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
-                  <h4 className="font-bold text-gray-900 mb-2">Material Handling</h4>
-                  <p className="text-gray-600 text-sm">4-ton overhead cranes with precision positioning</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Digital Twin Lab</h4>
+                  <p className="text-gray-600 text-sm">Virtual system modeling and simulation testing</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
-                  <h4 className="font-bold text-gray-900 mb-2">Loading Infrastructure</h4>
-                  <p className="text-gray-600 text-sm">Flat-bed & enclosed trailer loading docks</p>
+                  <h4 className="font-bold text-gray-900 mb-2">IoT Integration</h4>
+                  <p className="text-gray-600 text-sm">Industry 4.0 connectivity and edge computing</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
-                  <h4 className="font-bold text-gray-900 mb-2">Testing Capabilities</h4>
-                  <p className="text-gray-600 text-sm">Multiple voltage stations up to 570V</p>
+                  <h4 className="font-bold text-gray-900 mb-2">AI-Driven Analytics</h4>
+                  <p className="text-gray-600 text-sm">Predictive maintenance and optimization algorithms</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
-                  <h4 className="font-bold text-gray-900 mb-2">Flexible Production</h4>
-                  <p className="text-gray-600 text-sm">Adaptable work cells for all project sizes</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Rapid Prototyping</h4>
+                  <p className="text-gray-600 text-sm">3D printing and agile development processes</p>
                 </div>
               </div>
             </div>
           </div>
-
           {/* Quality Assurance */}
           <div className="bg-gradient-to-br from-slate-900 to-gray-800 text-white rounded-3xl p-12 lg:p-16">
             <div className="text-center mb-12">
@@ -229,7 +280,7 @@ const AboutUsPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold">
-                The iAutomation Advantage
+                The IndustrialTEK Advantage
               </div>
               <h2 className="text-4xl font-bold text-gray-900 leading-tight">
                 Why Industry Leaders Choose iAutomation
@@ -281,7 +332,7 @@ const AboutUsPage = () => {
 
           {/* Enhanced CTA Section */}
           <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-3xl p-12 lg:p-16 text-center shadow-2xl">
-            <h2 className="text-4xl font-bold mb-6">Your Trusted Industrial Control Panel Partner</h2>
+            <h2 className="text-4xl font-bold mb-6">Your Trusted Industrial Engineering Partner</h2>
             <p className="text-xl max-w-3xl mx-auto mb-8 text-orange-100 leading-relaxed">
               Join the hundreds of companies who rely on iAutomation for mission-critical electrical engineering solutions. Experience the difference that 24+ years of specialized expertise makes.
             </p>

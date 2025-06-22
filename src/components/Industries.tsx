@@ -2,44 +2,44 @@ import Image from 'next/image';
 
 const industries = [
   {
-    name: 'CNC Retrofitting & Modernization',
+    name: 'CNC Retrofitting',
     image: '/component machining.jpg',
     description: 'Comprehensive CNC controller upgrades for VMCs, HMCs, and turning centers with Siemens-828D, Fagor-8055i, Delta-NC300, Mitsubishi-E8, and Fanuc systems.'
   },
   {
     name: 'SPM Machine Development',
-    image: '/fleet management.jpg',
+    image: '/Spm2.jfif',
     description: 'Custom Special Purpose Machinery development with operator-configurable sequencing, adaptive automation, and revolutionary manufacturing solutions.'
   },
   {
     name: 'R&D Support & Innovation',
-    image: '/jig and fixtures design.jpg',
-    description: 'Research and development support for cutting-edge automation solutions, predictive maintenance systems, and Industry 4.0 initiatives.'
+    image: '/product_test.jfif',
+    description: 'Product testing, validation, compliance verification, and comprehensive lifecycle testing with durability assessment and manufacturing readiness validation for industrial systems.'
   },
   {
     name: 'Product Validation & Testing',
-    image: '/oee(over all equipment efficency)dashboard monitoring system.jpg',
+    image: '/ateq-1111.jpg',
     description: 'Advanced product validation machines and testing systems including dry leak testing, PPR testing, and cylinder performance validation solutions.'
   },
   {
     name: 'Jig & Fixture Design',
-    image: '/solidworks jig and fixture drawing.jpg',
+    image: '/jig and fixtures design (2).jpg',
     description: 'Precision jig and fixture development using SolidWorks and AutoCAD for manufacturing optimization and quality assurance applications.'
   },
   {
     name: 'Product Traceability & OEE',
-    image: '/jig and fixtures design (1).jpg',
+    image: '/qrcode.jfif',
     description: 'QR code-based product traceability systems and OEE monitoring solutions improving equipment effectiveness by 25% with real-time analytics.'
   },
   {
     name: 'Precision Machining Solutions',
-    image: '/jig and fixtures design (2).jpg',
+    image: '/machinening.jfif',
     description: 'CNC machining expertise with retrofitting capabilities for VMCs, HMCs, turning centers, and surface grinding machines across multiple platforms.'
   },
   {
     name: 'Product Design & Development',
-    image: '/solidworks jig and fixture drawing (1).jpg',
-    description: 'Complete product design solutions with electrical control panel design, servo motor selection, and pneumatic/hydraulic system integration for industrial applications.'
+    image: '/productdesign.jfif',
+    description: 'Complete product design solutions with electrical control panel design, servo motor selection, and pneumatic/hydraulic system integration.'
   },
 ];
 

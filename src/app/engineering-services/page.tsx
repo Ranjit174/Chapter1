@@ -11,39 +11,39 @@ export const metadata: Metadata = {
 const EngineeringServicesPage = () => {
   const services = [
     {
-      title: "Electrical Engineering",
-      description: "Expert design and layout of industrial control panels to your exact specifications. Our AutoCAD electrical schematic design ensures precision and compliance with industry standards.",
-      image: "/A detailed close-up image of a person's hands wearing safety gloves while carefully connecting wires to a neat and organized control panel. The panel should be more visible, showcasing intricate wiring and various c.jpg",
-      features: [
-        "UL, NFPA70, NFP79, and CE Mark compliance",
-        "AutoCAD electrical schematics",
-        "Optimized component selection and pricing",
-        "Power distribution design",
-        "Safety system integration"
+      "title": "Industrial Electrical Engineering & Control Systems",
+      "description": "Professional electrical engineering solutions for precision-engineered industrial control panels. Our certified team delivers AutoCAD electrical schematics with full IEC, NEMA, and UL standards compliance.",
+      "image": "/A detailed close-up image of a person's hands wearing safety gloves while carefully connecting wires to a neat and organized control panel. The panel should be more visible, showcasing intricate wiring and various c.jpg",
+      "features": [
+        "Comprehensive BOM analysis and cost optimization",
+        "Professional AutoCAD electrical schematic design",
+        "Strategic component selection and vendor sourcing",
+        "Power distribution system design and load analysis",
+        "Integrated safety system design with risk assessment"
       ]
     },
     {
-      title: "Control & Automation",
-      description: "Advanced control panel design and programming using industry-leading technologies and best practices for maximum operational efficiency and reliability.",
-      image: "/A detailed photorealistic rendering of the interior of a large industrial factory, showcasing a complex arrangement of heavy machinery and automated systems within a meticulously planned layout.  The image should em.jpg",
-      features: [
-        "Allen-Bradley,Siemens,Omron,Mitsubishi,Fanuc,Delta PLC Programming",
-        "Servo,VFD and soft start integration",
-        "Ignition partnership for sustainable processes",
-        "Motion control systems",
-        "Process optimization"
+      "title": "Industrial Control & Automation Systems",
+      "description": "Comprehensive automation solutions featuring advanced control panel design and multi-platform PLC programming. Our certified engineers deliver scalable systems optimized for maximum operational efficiency and Industry 4.0 integration.",
+      "image": "/A detailed photorealistic rendering of the interior of a large industrial factory, showcasing a complex arrangement of heavy machinery and automated systems within a meticulously planned layout.  The image should em.jpg",
+      "features": [
+        "Multi-platform PLC programming (Allen-Bradley, Siemens, Omron, Mitsubishi, Fanuc, Delta)",
+        "Advanced servo drive, VFD, and soft starter integration",
+        "Ignition SCADA partnership for sustainable process management",
+        "Precision motion control and robotics integration",
+        "Data-driven process optimization and performance analytics"
       ]
     },
     {
-      title: "Software Engineering",
-      description: "Over 8 years of combined experience with cutting-edge automation software and HMI solutions tailored to your specific industry requirements.",
-      image: "/Create a detailed image of an Indian male engineer, approximately 30-40 years old, wearing a clean, light blue collared shirt and khaki pants, intently programming a large, imposing industrial robotic arm with a lap.jpg",
-      features: [
-        "Rockwell FactoryTalk Machine & Server Edition",
-        "Ignition Gold Certified Integration",
-        "Custom HMI/iOT solutions",
-        "SCADA system development",
-        "Real-time data analytics"
+      "title": "Industrial Software Engineering & HMI Development",
+      "description": "Specialized industrial software solutions backed by extensive experience in automation platforms and HMI technologies. Our certified development team delivers enterprise-grade applications tailored to specific industry requirements and operational workflows.",
+      "image": "/Create a detailed image of an Indian male engineer, approximately 30-40 years old, wearing a clean, light blue collared shirt and khaki pants, intently programming a large, imposing industrial robotic arm with a lap.jpg",
+      "features": [
+        "Rockwell FactoryTalk Machine & Server Edition development",
+        "Ignition Gold Certified integration and deployment",
+        "Custom HMI/IoT solutions with responsive design",
+        "Database integration and SQL optimization for industrial systems",
+        "Advanced real-time data analytics and reporting dashboards"
       ]
     }
   ];

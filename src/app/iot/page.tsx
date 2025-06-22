@@ -41,9 +41,9 @@ const iiotSolutions = [
 ];
 
 const stats = [
-  { number: '10k+', label: 'Devices Connected' },
+  { number: '500+', label: 'Devices Connected' },
   { number: '30%', label: 'Avg. Efficiency Gain' },
-  { number: '99.9%', label: 'Data Accuracy' },
+  { number: '100%', label: 'Data Accuracy' },
   { number: '24/7', label: 'Real-Time Monitoring' }
 ];
 
