@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex justify-between items-center relative">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-gray-800 hover:text-red-600 transition-colors">
-              Panel<span className="text-red-600">TEK</span>
+              Industrial<span className="text-red-600">TEK</span>
             </Link>
           </div>
           <Navigation />

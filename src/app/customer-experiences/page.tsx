@@ -1,97 +1,171 @@
+'use client'
 import React from 'react';
 
 const testimonials = [
   {
-    quote: "iAutomation saved us 6 months on our project timeline. Their team delivered exactly what they promised.",
+    quote: "iAutomation delivered exactly what they promised. Our manual processes are now fully automated and running smoothly.",
     author: 'Sarah Chen',
-    title: 'VP Engineering',
+    title: 'Operations Manager',
     company: 'TechFlow Industries',
-    result: '6 months saved',
-    avatar: 'SC'
+    metrics: ['3-month implementation', '40% time savings', '99% accuracy'],
+    avatar: 'SC',
+    industry: 'Manufacturing'
   },
   {
-    quote: "Best automation partner we've worked with. Zero downtime since installation 18 months ago.",
+    quote: "Professional team that understood our needs. The system has been reliable since day one.",
     author: 'Michael Rodriguez',
-    title: 'Plant Manager',
+    title: 'Plant Supervisor',
     company: 'Advanced Manufacturing',
-    result: 'Zero downtime',
-    avatar: 'MR'
+    metrics: ['Zero downtime', '6-month ROI', 'Easy maintenance'],
+    avatar: 'MR',
+    industry: 'Manufacturing'
   },
   {
-    quote: "They solved a problem 3 other companies couldn't. Production increased 40% immediately.",
+    quote: "They solved our production bottleneck efficiently. Great communication throughout the project.",
     author: 'Jennifer Park',
-    title: 'Operations Director',
+    title: 'Production Director',
     company: 'Pacific Foods',
-    result: '40% increase',
-    avatar: 'JP'
+    metrics: ['25% increase output', '8-week delivery', 'Staff trained'],
+    avatar: 'JP',
+    industry: 'Food Processing'
+  },
+  {
+    quote: "The automation system has streamlined our warehouse operations beyond expectations. Highly recommend their services.",
+    author: 'David Wilson',
+    title: 'Warehouse Manager',
+    company: 'LogiCorp Solutions',
+    metrics: ['50% faster processing', '4-month implementation', '98% accuracy rate'],
+    avatar: 'DW',
+    industry: 'Logistics'
+  },
+  {
+    quote: "Excellent technical expertise and customer service. Our quality control process is now completely automated.",
+    author: 'Lisa Thompson',
+    title: 'Quality Assurance Lead',
+    company: 'Precision Parts Inc',
+    metrics: ['Automated QC process', '30% cost reduction', 'Real-time reporting'],
+    avatar: 'LT',
+    industry: 'Manufacturing'
+  },
+  {
+    quote: "From planning to implementation, everything was handled professionally. The system works flawlessly.",
+    author: 'Robert Martinez',
+    title: 'Facility Manager',
+    company: 'Metro Distribution',
+    metrics: ['Seamless integration', '5-month timeline', '24/7 monitoring'],
+    avatar: 'RM',
+    industry: 'Distribution'
   }
 ];
 
 const stats = [
-  { number: '500+', label: 'Happy Customers' },
-  { number: '98%', label: 'Success Rate' },
-  { number: '24hr', label: 'Response Time' }
+  { number: '50+', label: 'Projects Completed', icon: '📊' },
+  { number: '95%', label: 'Customer Satisfaction', icon: '⭐' },
+  { number: '< 24hr', label: 'Response Time', icon: '🕐' }
 ];
 
-const benefits = [
-  { icon: '⚡', title: 'Fast Results', desc: 'Projects delivered on time, every time' },
-  { icon: '🎯', title: 'Problem Solvers', desc: 'We solve what others cannot' },
-  { icon: '🤝', title: 'True Partners', desc: '24/7 support when you need it' }
+const certifications = [
+  'ISO 9001 Certified',
+  'Industry 4.0 Partner',
+  'Certified Automation Specialists'
 ];
 
 const TestimonialsPage = () => {
   return (
     <div className="bg-white min-h-screen">
-      {/* Hero - More compelling */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-4xl mx-auto px-6 py-20 text-center">
-          <div className="mb-6">
-            <span className="bg-white/20 px-4 py-2 rounded-full text-sm font-medium">
-              ⭐ Rated #1 Automation Partner
-            </span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Don&apos;t Just Take Our Word For It
-          </h1>
-          <p className="text-xl opacity-90 mb-8">
-            See what happens when you partner with automation experts who actually deliver
-          </p>
-          <div className="flex items-center justify-center gap-6 text-lg">
-            <div className="flex items-center gap-2">
-              <span className="text-3xl">⭐⭐⭐⭐⭐</span>
-              <span>4.9/5 rating</span>
+      {/* Hero Section */}
+      <section className="relative bg-slate-900 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent)] opacity-50"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6 py-20">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-lg px-4 py-2 mb-8">
+              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+              <span className="text-sm font-medium text-blue-200">Client Testimonials</span>
             </div>
-            <div className="w-px h-8 bg-white/30"></div>
-            <div>500+ projects delivered</div>
+            
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
+              Proven Results in
+              <span className="text-blue-400 block">Industrial Automation</span>
+            </h1>
+            
+            <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-12">
+              Discover how leading manufacturers and industrial companies have transformed their operations with our automation solutions.
+            </p>
+            
+            {/* Certifications */}
+            <div className="flex flex-wrap gap-4 mb-12">
+              {certifications.map((cert, index) => (
+                <div key={index} className="bg-white/10 border border-white/20 rounded-lg px-4 py-2">
+                  <span className="text-sm font-medium text-white">{cert}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Stats */}
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl">
+            {stats.map((stat, index) => (
+              <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-2xl">{stat.icon}</span>
+                  <div className="text-3xl font-bold text-white">{stat.number}</div>
+                </div>
+                <div className="text-slate-300 font-medium">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Static testimonials */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Real Results from Real Customers</h2>
-          
-          <div className="space-y-12">
+      {/* Testimonials Grid */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              What Industry Leaders Say
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Real experiences from companies who have implemented our automation solutions across manufacturing, logistics, and processing industries.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-12"
+                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200"
               >
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-6">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
                     {testimonial.avatar}
                   </div>
-                  <blockquote className="text-3xl font-light text-gray-800 mb-8 leading-relaxed">
-                    &quot;{testimonial.quote}&quot;
-                  </blockquote>
-                  <div className="mb-4">
-                    <div className="font-bold text-xl text-gray-900">{testimonial.author}</div>
-                    <div className="text-blue-600 font-medium">{testimonial.title}</div>
-                    <div className="text-gray-600">{testimonial.company}</div>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900 text-lg">{testimonial.author}</div>
+                    <div className="text-blue-600 font-semibold">{testimonial.title}</div>
+                    <div className="text-slate-600">{testimonial.company}</div>
                   </div>
-                  <div className="inline-block bg-green-100 text-green-800 px-6 py-2 rounded-full font-semibold">
-                    Result: {testimonial.result}
+                  <div className="flex-shrink-0">
+                    <div className="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm font-medium">
+                      {testimonial.industry}
+                    </div>
+                  </div>
+                </div>
+                
+                <blockquote className="text-slate-700 text-lg leading-relaxed mb-8 font-medium">
+                  &quot;{testimonial.quote}&quot;
+                </blockquote>
+                
+                <div className="border-t border-slate-200 pt-6">
+                  <div className="text-sm font-bold text-slate-900 mb-4 uppercase tracking-wide">Key Outcomes</div>
+                  <div className="grid grid-cols-1 gap-3">
+                    {testimonial.metrics.map((metric, i) => (
+                      <div key={i} className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-slate-600 font-medium">{metric}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -100,91 +174,86 @@ const TestimonialsPage = () => {
         </div>
       </section>
 
-      {/* Social proof stats */}
-      <section className="py-16 bg-gray-900 text-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid grid-cols-3 gap-8 text-center">
-            {stats.map((stat, i) => (
-              <div key={i}>
-                <div className="text-5xl font-bold mb-2 text-blue-400">{stat.number}</div>
-                <div className="text-gray-300">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits - Problem/solution focused */}
-      <section className="py-20">
+      {/* CTA Section */}
+      <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Why Companies Choose Us Over Competitors</h2>
-          <p className="text-xl text-gray-600 mb-16">The difference that actually matters to your business</p>
-          
-          <div className="grid md:grid-cols-3 gap-12">
-            {benefits.map((benefit, i) => (
-              <div key={i} className="group">
-                <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
-                  {benefit.icon}
-                </div>
-                <h3 className="text-2xl font-bold mb-4">{benefit.title}</h3>
-                <p className="text-gray-600 text-lg">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Urgency-driven CTA */}
-      <section className="bg-gradient-to-r from-green-500 to-blue-600 text-white py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Get Results Like These?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join 500+ companies who chose the automation partner that actually delivers
+          <h2 className="text-4xl font-bold mb-6">
+            Ready to Transform Your Operations?
+          </h2>
+          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+            Schedule a consultation with our automation specialists to discuss your specific requirements and explore how we can optimize your industrial processes.
           </p>
           
-          <div className="bg-white/10 rounded-lg p-6 mb-8 max-w-md mx-auto">
-            <div className="text-sm opacity-75 mb-2">Free consultation includes:</div>
-            <div className="space-y-1 text-left">
-              <div className="flex items-center gap-2">
-                <span className="text-green-300">✓</span>
-                <span>Project timeline estimate</span>
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-8 mb-8 max-w-2xl mx-auto">
+            <div className="text-lg font-bold mb-6 text-white">Consultation Process</div>
+            <div className="grid md:grid-cols-3 gap-6 text-left">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold mb-3">1</div>
+                <div className="font-semibold text-white mb-2">Assessment</div>
+                <div className="text-sm text-slate-400">Current process evaluation</div>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-300">✓</span>
-                <span>Cost breakdown</span>
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold mb-3">2</div>
+                <div className="font-semibold text-white mb-2">Solution Design</div>
+                <div className="text-sm text-slate-400">Custom automation plan</div>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-300">✓</span>
-                <span>Risk assessment</span>
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold mb-3">3</div>
+                <div className="font-semibold text-white mb-2">Implementation</div>
+                <div className="text-sm text-slate-400">Project timeline & ROI</div>
               </div>
             </div>
           </div>
 
-          <button className="bg-white text-blue-600 px-10 py-4 rounded-lg font-bold text-xl hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105">
-            Get Your Free Consultation
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg">
+              Schedule Consultation
+            </button>
+            <button className="bg-transparent border-2 border-slate-600 hover:border-slate-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+              Download Case Studies
+            </button>
+          </div>
           
-          <div className="mt-4 text-sm opacity-75">
-            📞 Or call us directly: (555) 123-4567
+          <div className="mt-8 pt-8 border-t border-slate-800 text-slate-400">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm">
+              <span>📧 hello@iautomation.com</span>
+              <span>📞 (555) 123-4567</span>
+              <span>🕐 Response within 24 hours</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Trust indicators */}
-      <section className="py-12 border-t bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="flex items-center justify-center gap-8 text-gray-500 text-sm">
-            <div className="flex items-center gap-2">
-              <span>🔒</span>
-              <span>Licensed & Insured</span>
+      {/* Trust Section */}
+      <section className="py-16 bg-white border-t border-slate-200">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-12 text-center">
+            <div className="space-y-4">
+              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto">
+                <svg className="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="font-bold text-slate-900 text-lg">Proven Expertise</div>
+              <div className="text-slate-600">Over 10 years specializing in industrial automation solutions</div>
             </div>
-            <div className="flex items-center gap-2">
-              <span>📋</span>
-              <span>ISO 9001 Certified</span>
+            <div className="space-y-4">
+              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto">
+                <svg className="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <div className="font-bold text-slate-900 text-lg">Reliable Support</div>
+              <div className="text-slate-600">24/7 monitoring and comprehensive maintenance programs</div>
             </div>
-            <div className="flex items-center gap-2">
-              <span>⚡</span>
-              <span>25+ Years Experience</span>
+            <div className="space-y-4">
+              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto">
+                <svg className="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="font-bold text-slate-900 text-lg">Fast Implementation</div>
+              <div className="text-slate-600">Rapid deployment with minimal disruption to operations</div>
             </div>
           </div>
         </div>

@@ -113,7 +113,7 @@ const AboutUsPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent rounded-2xl transform rotate-3"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image 
-                  src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=800&auto=format&fit=crop" 
+                  src="/change the eye direction to laptop better preffer specs.jpg" 
                   alt="iAutomation Industrial Panel Manufacturing Facility" 
                   width={600} 
                   height={400} 
@@ -149,7 +149,7 @@ const AboutUsPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-transparent rounded-2xl transform -rotate-3"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image 
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800&auto=format&fit=crop" 
+                  src="/just wire the relays in the terminal.jpg" 
                   alt="iAutomation Engineering Team Collaboration" 
                   width={600} 
                   height={400} 

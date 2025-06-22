@@ -9,15 +9,8 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-6 text-xl text-white">LOCATION</h3>
             <div className="text-gray-300 space-y-2 leading-relaxed">
-              <p className="font-semibold">iAutomation</p>
-              <p>1234 Industrial Drive</p>
-              <p>Manufacturing City, State 12345</p>
-              <Link 
-                href="/directions" 
-                className="inline-block mt-2 text-red-400 hover:text-red-300 transition-colors"
-              >
-                Get Directions →
-              </Link>
+              <p className="font-semibold">Industrial Tek</p>
+              <p>Coimbatore, Tamil Nadu, India</p>
             </div>
           </div>
 
@@ -60,15 +53,6 @@ const Footer = () => {
                 </svg>
                 LinkedIn
               </Link>
-              <Link 
-                href="#" 
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-              >
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-                Twitter
-              </Link>
             </div>
           </div>
 
@@ -93,25 +77,12 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <Link 
-                href="/privacy-policy" 
-                className="text-gray-400 hover:text-white transition-colors mr-4"
-              >
-                Privacy Policy
-              </Link>
-              <span className="text-gray-600">|</span>
-              <Link 
-                href="/sitemap" 
-                className="text-gray-400 hover:text-white transition-colors ml-4"
-              >
-                Sitemap
-              </Link>
             </div>
             <div className="text-center md:text-right">
               <p className="text-sm text-gray-400">
-                © {new Date().getFullYear()} PanelTEK LLC. All rights reserved.
+                © {new Date().getFullYear()} Industrial Tek. All rights reserved.
               </p>
-              <p className="text-xs text-gray-500 mt-1">designed by NAVEO</p>
+              <p className="text-xs text-gray-500 mt-1">designed by Volt</p>
             </div>
           </div>
         </div>

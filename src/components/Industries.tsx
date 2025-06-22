@@ -1,60 +1,112 @@
-import { Factory, UtensilsCrossed, Droplets, Zap, Wind, Beaker } from 'lucide-react';
+import Image from 'next/image';
 
 const industries = [
   {
-    name: "Manufacturing",
-    icon: <Factory className="w-8 h-8" />,
-    description: "Advanced automation for precision manufacturing and quality control.",
+    name: 'CNC Retrofitting & Modernization',
+    image: '/component machining.jpg',
+    description: 'Comprehensive CNC controller upgrades for VMCs, HMCs, and turning centers with Siemens-828D, Fagor-8055i, Delta-NC300, Mitsubishi-E8, and Fanuc systems.'
   },
   {
-    name: "Food & Beverage",
-    icon: <UtensilsCrossed className="w-8 h-8" />,
-    description: "Sanitary control systems ensuring product safety and compliance.",
+    name: 'SPM Machine Development',
+    image: '/fleet management.jpg',
+    description: 'Custom Special Purpose Machinery development with operator-configurable sequencing, adaptive automation, and revolutionary manufacturing solutions.'
   },
   {
-    name: "Water Treatment",
-    icon: <Droplets className="w-8 h-8" />,
-    description: "Comprehensive SCADA systems for water and wastewater management.",
+    name: 'R&D Support & Innovation',
+    image: '/jig and fixtures design.jpg',
+    description: 'Research and development support for cutting-edge automation solutions, predictive maintenance systems, and Industry 4.0 initiatives.'
   },
   {
-    name: "Oil & Gas",
-    icon: <Wind className="w-8 h-8" />,
-    description: "Explosion-proof control panels for hazardous location classifications.",
+    name: 'Product Validation & Testing',
+    image: '/oee(over all equipment efficency)dashboard monitoring system.jpg',
+    description: 'Advanced product validation machines and testing systems including dry leak testing, PPR testing, and cylinder performance validation solutions.'
   },
   {
-    name: "Power Generation",
-    icon: <Zap className="w-8 h-8" />,
-    description: "Mission-critical controls for reliable energy distribution networks.",
+    name: 'Jig & Fixture Design',
+    image: '/solidworks jig and fixture drawing.jpg',
+    description: 'Precision jig and fixture development using SolidWorks and AutoCAD for manufacturing optimization and quality assurance applications.'
   },
   {
-    name: "Chemical Processing",
-    icon: <Beaker className="w-8 h-8" />,
-    description: "Safety-critical process control systems with advanced monitoring.",
+    name: 'Product Traceability & OEE',
+    image: '/jig and fixtures design (1).jpg',
+    description: 'QR code-based product traceability systems and OEE monitoring solutions improving equipment effectiveness by 25% with real-time analytics.'
+  },
+  {
+    name: 'Precision Machining Solutions',
+    image: '/jig and fixtures design (2).jpg',
+    description: 'CNC machining expertise with retrofitting capabilities for VMCs, HMCs, turning centers, and surface grinding machines across multiple platforms.'
+  },
+  {
+    name: 'Product Design & Development',
+    image: '/solidworks jig and fixture drawing (1).jpg',
+    description: 'Complete product design solutions with electrical control panel design, servo motor selection, and pneumatic/hydraulic system integration for industrial applications.'
   },
 ];
 
 const Industries = () => {
   return (
-    <section className="py-20 md:py-28 bg-slate-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 lg:py-28 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-            Industries We Serve
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Comprehensive Engineering Solutions
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Delivering specialized control solutions across diverse sectors with uncompromising quality and precision.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Complete project lifecycle management from concept to commissioning. Specializing in SPM development, R&D support, product validation, precision machining, and advanced industrial automation solutions.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {industries.map((industry) => (
-            <div key={industry.name} className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200/80">
-              <div className="bg-amber-100 text-amber-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                {industry.icon}
+            <div key={industry.name} className="group">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-56">
+                  <Image
+                    src={industry.image}
+                    alt={industry.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-bold text-white mb-1">
+                      {industry.name}
+                    </h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-600 leading-relaxed">
+                    {industry.description}
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">{industry.name}</h3>
-              <p className="text-slate-600">{industry.description}</p>
             </div>
           ))}
+        </div>
+        
+        {/* Key Achievements Section */}
+        <div className="mt-20 bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 text-white">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold mb-4">Engineering Excellence</h3>
+            <p className="text-slate-300 text-lg">Strategic project management and technical innovation across all manufacturing domains</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">8+</div>
+              <div className="text-slate-300">Years of Project Leadership Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">25%</div>
+              <div className="text-slate-300">Improvement in Overall Equipment Effectiveness</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">40%</div>
+              <div className="text-slate-300">Reduction in Unplanned Downtime</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">99.9%</div>
+              <div className="text-slate-300">Defect Detection Accuracy</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

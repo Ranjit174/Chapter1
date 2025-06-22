@@ -4,8 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Electrical Engineering Services | PanelTEK',
-  description: 'iAutomation offers comprehensive electrical engineering services including control panel design, layout, programming, system start-up, and documentation.',
+  title: 'Electrical Engineering Services | Industrial TEK',
+  description: 'Industrial Control Panel Manufacturer offers comprehensive electrical engineering services including control panel design, layout, programming, system start-up, and documentation.',
 };
 
 const EngineeringServicesPage = () => {
@@ -13,7 +13,7 @@ const EngineeringServicesPage = () => {
     {
       title: "Electrical Engineering",
       description: "Expert design and layout of industrial control panels to your exact specifications. Our AutoCAD electrical schematic design ensures precision and compliance with industry standards.",
-      image: "https://images.unsplash.com/photo-1581092921462-699de70c3b8a?q=80&w=800&auto=format&fit=crop",
+      image: "/A detailed close-up image of a person's hands wearing safety gloves while carefully connecting wires to a neat and organized control panel. The panel should be more visible, showcasing intricate wiring and various c.jpg",
       features: [
         "UL, NFPA70, NFP79, and CE Mark compliance",
         "AutoCAD electrical schematics",
@@ -25,10 +25,10 @@ const EngineeringServicesPage = () => {
     {
       title: "Control & Automation",
       description: "Advanced control panel design and programming using industry-leading technologies and best practices for maximum operational efficiency and reliability.",
-      image: "https://images.unsplash.com/photo-1633493725743-d853a18d23e9?q=80&w=800&auto=format&fit=crop",
+      image: "/A detailed photorealistic rendering of the interior of a large industrial factory, showcasing a complex arrangement of heavy machinery and automated systems within a meticulously planned layout.  The image should em.jpg",
       features: [
-        "Allen-Bradley/Rockwell Automation PLC Programming",
-        "VFD and soft start integration",
+        "Allen-Bradley,Siemens,Omron,Mitsubishi,Fanuc,Delta PLC Programming",
+        "Servo,VFD and soft start integration",
         "Ignition partnership for sustainable processes",
         "Motion control systems",
         "Process optimization"
@@ -36,12 +36,12 @@ const EngineeringServicesPage = () => {
     },
     {
       title: "Software Engineering",
-      description: "Over 60 years of combined experience with cutting-edge automation software and HMI solutions tailored to your specific industry requirements.",
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop",
+      description: "Over 8 years of combined experience with cutting-edge automation software and HMI solutions tailored to your specific industry requirements.",
+      image: "/Create a detailed image of an Indian male engineer, approximately 30-40 years old, wearing a clean, light blue collared shirt and khaki pants, intently programming a large, imposing industrial robotic arm with a lap.jpg",
       features: [
         "Rockwell FactoryTalk Machine & Server Edition",
         "Ignition Gold Certified Integration",
-        "Custom HMI/OIT solutions",
+        "Custom HMI/iOT solutions",
         "SCADA system development",
         "Real-time data analytics"
       ]
@@ -49,8 +49,8 @@ const EngineeringServicesPage = () => {
   ];
 
   const stats = [
-    { number: "100+", label: "Years Combined Experience" },
-    { number: "500+", label: "Projects Completed" },
+    { number: "8+", label: "Years Combined Experience" },
+    { number: "50+", label: "Projects Completed" },
     { number: "24/7", label: "Support Available" },
     { number: "99.9%", label: "Uptime Guarantee" }
   ];
@@ -67,8 +67,11 @@ const EngineeringServicesPage = () => {
   return (
     <div className="bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-24">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      <section 
+        className="relative text-white py-24 bg-cover bg-center"
+        style={{ backgroundImage: "url('/plc.png')" }}
+      >
+        <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
@@ -83,7 +86,7 @@ const EngineeringServicesPage = () => {
             </h1>
             
             <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
-              Transform your industrial automation with our 100+ years of combined expertise. 
+              Transform your industrial automation with our combined expertise. 
               From design to deployment, we deliver professional engineering solutions.
             </p>
             

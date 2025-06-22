@@ -19,7 +19,7 @@ const Navigation = () => {
 
   const navLinks = [
     { href: '/engineering-services', label: 'Engineering Services' },
-    { href: '/industries', label: 'Industries' },
+    { href: '/iot', label: 'IoT' },
     { href: '/customer-experiences', label: 'Customer Experiences' },
     { href: '/about-us', label: 'About Us' },
     { href: '/latest-news', label: 'Latest News' },
