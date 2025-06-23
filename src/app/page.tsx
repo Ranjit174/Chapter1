@@ -7,10 +7,9 @@ import Partners from '@/components/Partners';
 import CallToAction from '@/components/CallToAction';
 
 export const metadata: Metadata = {
-  title: 'IndustrialTEK | IES',
-  description: 'Leading industrial control panel manufacturer specializing in custom control panel design, UL 508A listed fabrication, and electrical engineering services for a wide range of industries.',
+  title: "IndustrialTEK | Automation, Machine Building & Industrial Software",
+  description: "Your partner for industrial automation. We specialize in SPM building, PLC programming, electrical control panels, CNC retrofitting, OEE software, and lean manufacturing implementation.",
   keywords: ['industrial control panel manufacturer', 'custom control panel builder', 'UL 508A panel shop', 'electrical engineering services', 'control panel fabrication', 'iAutomation'],
-  
 };
 
 export default function Home() {

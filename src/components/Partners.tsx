@@ -15,7 +15,7 @@ const partners: Partner[] = [
   {
     name: "Allen-Bradley",
     description: "Rockwell Automation",
-    image: "/allen bradely.jfif",
+    image: "/allen bradely.jpg",
     textInitials: "AB",
     category: "Industrial Automation"
   },
@@ -64,7 +64,7 @@ const partners: Partner[] = [
   {
     name: "Fanuc",
     description: "Factory Automation",
-    image: "/fanuc.jfif",
+    image: "/fanuc.jpg",
     textInitials: "F",
     category: "Robotics & CNC"
   },

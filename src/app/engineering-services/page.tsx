@@ -4,8 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Electrical Engineering Services | Industrial TEK',
-  description: 'Industrial Control Panel Manufacturer offers comprehensive electrical engineering services including control panel design, layout, programming, system start-up, and documentation.',
+  title: "Engineering Services | PLC, CNC, Mechanical Design | IndustrialTEK",
+  description: "Comprehensive engineering services including PLC programming, CNC machine retrofitting, mechanical design with AutoCAD & SolidWorks, fixture making, and machine maintenance.",
 };
 
 const EngineeringServicesPage = () => {

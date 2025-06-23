@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { BarChart, Cpu, Wifi, Cloud, ShieldCheck, Zap } from 'lucide-react';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Industrial IoT (IIoT) Solutions',
-  description: 'Unlock operational efficiency and predictive insights with our custom Industrial Internet of Things (IIoT) solutions. We connect your machines, data, and people.',
+export const metadata: Metadata = {
+  title: "Industrial IoT & OEE Software | IndustrialTEK",
+  description: "Boost your factory's efficiency with our Industrial IoT solutions, OEE software, and efficiency metric software. Achieve real-time monitoring and data-driven decisions.",
 };
 
 const iiotSolutions = [

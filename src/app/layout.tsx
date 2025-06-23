@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
-  title: "PanelTEK | Custom Control Panel Manufacturer",
-  description: "A clone of the PanelTek website built with Next.js and Tailwind CSS.",
+  title: "IndustrialTEK | Industrial Automation & Machine Building Solutions",
+  description: "Leading experts in electrical control panels, PLC programming, special purpose machines (SPM), CNC retrofitting, and industrial software solutions in Coimbatore, India.",
 };
 
 export default function RootLayout({
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className}>
         <Header />
         <main>{children}</main>
         <Footer />

@@ -8,12 +8,12 @@ const industries = [
   },
   {
     name: 'SPM Machine Development',
-    image: '/Spm2.jfif',
+    image: '/spm2.jpg',
     description: 'Custom Special Purpose Machinery development with operator-configurable sequencing, adaptive automation, and revolutionary manufacturing solutions.'
   },
   {
     name: 'R&D Support & Innovation',
-    image: '/product_test.jfif',
+    image: '/digitaltwin.jpg',
     description: 'Product testing, validation, compliance verification, and comprehensive lifecycle testing with durability assessment and manufacturing readiness validation for industrial systems.'
   },
   {
@@ -28,17 +28,17 @@ const industries = [
   },
   {
     name: 'Product Traceability & OEE',
-    image: '/qrcode.jfif',
+    image: '/qrcode.jpg',
     description: 'QR code-based product traceability systems and OEE monitoring solutions improving equipment effectiveness by 25% with real-time analytics.'
   },
   {
     name: 'Precision Machining Solutions',
-    image: '/machinening.jfif',
+    image: '/machinening.jpg',
     description: 'CNC machining expertise with retrofitting capabilities for VMCs, HMCs, turning centers, and surface grinding machines across multiple platforms.'
   },
   {
     name: 'Product Design & Development',
-    image: '/productdesign.jfif',
+    image: '/productdesign.jpg',
     description: 'Complete product design solutions with electrical control panel design, servo motor selection, and pneumatic/hydraulic system integration.'
   },
 ];

@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import ContactForm from '../../components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | PanelTEK',
-  description: 'Get in touch with iAutomation for a quote or any inquiries about our industrial control panel and electrical engineering services.',
+  title: "Contact IndustrialTEK | Get a Quote for Your Automation Project",
+  description: "Contact us for a quote on electrical control panels, PLC programming, SPM building, or OEE software. Let's discuss your industrial automation needs today.",
 };
 
 const ContactUsPage = () => {
@@ -16,33 +16,48 @@ const ContactUsPage = () => {
           {/* Left Column - Company Info */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-4xl font-bold text-gray-800 mb-8">iAutomation</h1>
-              
-              <div className="space-y-4 text-gray-700">
-                <p className="text-lg">130 East Larsen Drive</p>
-                <p className="text-lg">Fond du Lac, Wisconsin 54937</p>
-                
-                <div className="pt-4">
-                  <p className="text-lg font-semibold">Phone: 920.906.9457</p>
-                </div>
-                
-                <div className="pt-6">
-                  <button className="bg-red-600 text-white px-8 py-3 font-bold hover:bg-red-700 transform -skew-x-12">
-                    <span className="block transform skew-x-12">VIEW MAP</span>
-                  </button>
-                </div>
-              </div>
+              <h1 className="text-4xl font-bold text-gray-800 mb-4">IndustrialTEK</h1>
+              <p className="text-xl text-blue-600 font-semibold mb-8">Industrial Control Panel Experts</p>
+             
+
             </div>
 
-            <div className="pt-8">
-              <p className="text-gray-700 leading-relaxed">
-                Please fill out the form for more information on your electrical engineering project. We&apos;ll get back to you right away with ideas and maybe even things you didn&apos;t consider that will help you with what you&apos;re trying to accomplish. Our goal is to simplify your process, increase efficiency, and save you money.
-              </p>
+            {/* Hook Content */}
+            <div className="pt-8 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                Ready to Revolutionize Your Industrial Process?
+              </h2>
+              
+              <div className="space-y-4 text-gray-700">
+                <p className="text-lg leading-relaxed">
+                  <strong>Stop losing money on inefficient systems.</strong> Our electrical engineering experts don&apos;t just solve problems – we uncover opportunities you never knew existed.
+                </p>
+                
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-blue-800 mb-2">What You&apos;ll Get:</h3>
+                  <ul className="space-y-2 text-blue-700">
+                    <li>✓ Free consultation with innovative solutions</li>
+                    <li>✓ Custom strategies to cut operational costs</li>
+                    <li>✓ Expert insights you won&apos;t find anywhere else</li>
+                    <li>✓ Streamlined processes that boost efficiency</li>
+                  </ul>
+                </div>
+                
+                <p className="text-lg font-semibold text-gray-800 bg-yellow-100 p-3 rounded-lg">
+                  <span className="text-yellow-600">⚡</span> Get your project started today – we respond within 24 hours with actionable ideas and cost-saving recommendations.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Right Column - Contact Form */}
-          <ContactForm />
+          <div className="bg-white rounded-lg shadow-xl p-8">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Let&apos;s Engineer Your Solution</h2>
+              <p className="text-gray-600">Partner with us to bring your industrial project to life</p>
+            </div>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>

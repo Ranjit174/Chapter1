@@ -1,71 +1,75 @@
-'use client'
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Customer Success Stories | IndustrialTEK Automation Solutions",
+  description: "See how our clients achieved success with our product testing machines, layout optimization, safety audits, and industrial ERP solutions. Read testimonials from our partners.",
+};
 
 const testimonials = [
   {
-    quote: "iAutomation delivered exactly what they promised. Our manual processes are now fully automated and running smoothly.",
-    author: 'Sarah Chen',
-    title: 'Operations Manager',
-    company: 'TechFlow Industries',
-    metrics: ['3-month implementation', '40% time savings', '99% accuracy'],
-    avatar: 'SC',
-    industry: 'Manufacturing'
+    quote: "Their automation solution for our textile mill was a game-changer. Our production efficiency has skyrocketed.",
+    author: 'Priya Kumar',
+    title: 'Managing Director',
+    company: 'Lakshmi Textiles, Coimbatore',
+    metrics: ['4-month textile automation', '30% increase in yarn production', 'Reduced manual errors by 95%'],
+    avatar: 'PK',
+    industry: 'Textile'
   },
   {
-    quote: "Professional team that understood our needs. The system has been reliable since day one.",
-    author: 'Michael Rodriguez',
-    title: 'Plant Supervisor',
-    company: 'Advanced Manufacturing',
-    metrics: ['Zero downtime', '6-month ROI', 'Easy maintenance'],
-    avatar: 'MR',
-    industry: 'Manufacturing'
+    quote: "The team understood the demands of the automotive sector perfectly. The new CNC integration is flawless.",
+    author: 'Anand Raj',
+    title: 'Plant Head',
+    company: 'Kovai Auto Components',
+    metrics: ['Seamless CNC integration', 'Achieved ROI in 8 months', '24/7 operational reliability'],
+    avatar: 'AR',
+    industry: 'Automotive'
   },
   {
-    quote: "They solved our production bottleneck efficiently. Great communication throughout the project.",
-    author: 'Jennifer Park',
-    title: 'Production Director',
-    company: 'Pacific Foods',
-    metrics: ['25% increase output', '8-week delivery', 'Staff trained'],
-    avatar: 'JP',
+    quote: "They modernized our food processing plant with an efficient packaging line. We are extremely satisfied.",
+    author: 'Kavita Menon',
+    title: 'Operations Chief',
+    company: 'Annapoorna Agro Foods, Erode',
+    metrics: ['35% faster packaging line', 'Delivered in 10 weeks', 'Simplified operator controls'],
+    avatar: 'KM',
     industry: 'Food Processing'
   },
   {
-    quote: "The automation system has streamlined our warehouse operations beyond expectations. Highly recommend their services.",
-    author: 'David Wilson',
-    title: 'Warehouse Manager',
-    company: 'LogiCorp Solutions',
-    metrics: ['50% faster processing', '4-month implementation', '98% accuracy rate'],
-    avatar: 'DW',
-    industry: 'Logistics'
+    quote: "Our foundry's casting inspection process is now fully automated, thanks to their expertise. Rejection rates are way down.",
+    author: 'Rajeshwari Iyer',
+    title: 'Quality Control Head',
+    company: 'Premier Foundries, Coimbatore',
+    metrics: ['Automated casting inspection', 'Reduced rejection rate by 40%', 'Real-time quality dashboard'],
+    avatar: 'RI',
+    industry: 'Foundry'
   },
   {
-    quote: "Excellent technical expertise and customer service. Our quality control process is now completely automated.",
-    author: 'Lisa Thompson',
-    title: 'Quality Assurance Lead',
-    company: 'Precision Parts Inc',
-    metrics: ['Automated QC process', '30% cost reduction', 'Real-time reporting'],
-    avatar: 'LT',
+    quote: "We needed a robust solution for our motor assembly line. They delivered a system that has significantly boosted our output.",
+    author: 'Vikram Singh',
+    title: 'Production Manager',
+    company: 'Sakthi Pumps & Motors',
+    metrics: ['Integrated motor assembly line', 'Project completed in 6 months', 'Continuous performance monitoring'],
+    avatar: 'VS',
     industry: 'Manufacturing'
   },
   {
-    quote: "From planning to implementation, everything was handled professionally. The system works flawlessly.",
-    author: 'Robert Martinez',
-    title: 'Facility Manager',
-    company: 'Metro Distribution',
-    metrics: ['Seamless integration', '5-month timeline', '24/7 monitoring'],
-    avatar: 'RM',
-    industry: 'Distribution'
+    quote: "The warehouse automation system has streamlined our logistics operations in Tiruppur. Highly professional team.",
+    author: 'Suresh Kumar',
+    title: 'Warehouse Manager',
+    company: 'Ganga Logistics, Tiruppur',
+    metrics: ['50% faster warehouse sorting', 'Implemented in 5 months', '99.5% order accuracy'],
+    avatar: 'SK',
+    industry: 'Logistics'
   }
 ];
 
 const stats = [
   { number: '50+', label: 'Projects Completed', icon: '📊' },
-  { number: '95%', label: 'Customer Satisfaction', icon: '⭐' },
+  { number: '100%', label: 'Customer Satisfaction', icon: '⭐' },
   { number: '< 24hr', label: 'Response Time', icon: '🕐' }
 ];
 
 const certifications = [
-  'ISO 9001 Certified',
   'Industry 4.0 Partner',
   'Certified Automation Specialists'
 ];
@@ -91,7 +95,7 @@ const TestimonialsPage = () => {
             </h1>
             
             <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-12">
-              Discover how leading manufacturers and industrial companies have transformed their operations with our automation solutions.
+              Discover how leading manufacturers and industrial companies across Tamil Nadu have transformed their operations with our automation solutions, right here from our base in Coimbatore.
             </p>
             
             {/* Certifications */}
@@ -124,10 +128,10 @@ const TestimonialsPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              What Industry Leaders Say
+              What Our Local Industry Partners Say
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Real experiences from companies who have implemented our automation solutions across manufacturing, logistics, and processing industries.
+              Real experiences from companies in Coimbatore and across Tamil Nadu who have implemented our automation solutions in textiles, automotive, and manufacturing sectors.
             </p>
           </div>
 
@@ -216,9 +220,7 @@ const TestimonialsPage = () => {
           
           <div className="mt-8 pt-8 border-t border-slate-800 text-slate-400">
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm">
-              <span>📧 hello@iautomation.com</span>
-              <span>📞 (555) 123-4567</span>
-              <span>🕐 Response within 24 hours</span>
+              <span>Response within 24 hours</span>
             </div>
           </div>
         </div>

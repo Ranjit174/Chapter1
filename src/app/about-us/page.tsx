@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About iAutomation | Leading Industrial Control Panel Manufacturer',
-  description: 'Discover iAutomation\'s 24+ years of expertise in industrial control panel manufacturing, electrical engineering solutions, and certified quality processes serving diverse industries.',
+  title: 'About IndustrialTEK | Experts in Lean Manufacturing & Automation',
+  description: 'Learn about IndustrialTEK, our expertise in Six Sigma, 5S maintenance, and providing 24x7 customer support for all our machine building and industrial automation projects.',
   keywords: 'industrial control panels, electrical engineering, UL certification, manufacturing, automation solutions',
   openGraph: {
     title: 'About IndustrialTEK | Industrial Control Panel Excellence',
-    description: 'Leading manufacturer of industrial control panels with 24+ years of experience, certified processes, and proven expertise across multiple industries.',
+    description: 'Leading manufacturer of industrial control panels with 8+ years of experience, certified processes, and proven expertise across multiple industries.',
     type: 'website',
   },
 };
@@ -74,8 +74,8 @@ const AboutUsPage = () => {
   ];
 
   const stats = [
-    { number: '24+', label: 'Years of Excellence', description: 'Serving industry since 2000' },
-    { number: '30K', label: 'Square Feet', description: 'State-of-the-art facility' },
+    { number: '8+', label: 'Years of Excellence', description: 'Serving industry since 2017' },
+    { number: '2000', label: 'Square Feet', description: 'State-of-the-art facility' },
     { number: '100%', label: 'Testing Protocol', description: 'Every panel thoroughly tested' },
     { number: '7', label: 'Diverse Industries', description: 'Cross-platform expertise' }
   ];
