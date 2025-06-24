@@ -30,6 +30,11 @@ export default function Footer() {
             <address className="not-italic text-slate-400 text-sm">
               <p>Coimbatore, Tamil Nadu, 641001</p>
               <p>India</p>
+              <p>
+                <a href="tel:+919488233115" className="hover:text-white transition-colors">
+                  +91 94882 33115
+                </a>
+              </p>
             </address>
           </div>
         </div>

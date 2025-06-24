@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "IndustrialTEK | Industrial Automation & Machine Building Solutions",
-  description: "Leading experts in electrical control panels, PLC programming, special purpose machines (SPM), CNC retrofitting, and industrial software solutions in Coimbatore, India.",
+  description: "Leading experts in electrical control panels, PLC programming, special purpose machines (SPM), CNC retrofitting, and industrial software solutions in Coimbatore, India. Contact us at +91 94882 33115.",
 };
 
 export default function RootLayout({

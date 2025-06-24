@@ -326,6 +326,9 @@ const AboutUsPage = () => {
                   <div className="w-2 h-2 bg-blue-300 rounded-full"></div>
                   <span className="text-blue-100">Transparent pricing and timeline</span>
                 </div>
+                 <div className="flex items-center space-x-3 pt-4">
+                  <span className="text-blue-100 font-bold">Call us: <a href="tel:+919488233115" className="hover:underline">+91 94882 33115</a></span>
+                </div>
               </div>
             </div>
           </div>

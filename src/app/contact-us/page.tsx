@@ -18,6 +18,10 @@ const ContactUsPage = () => {
             <div>
               <h1 className="text-4xl font-bold text-gray-800 mb-4">IndustrialTEK</h1>
               <p className="text-xl text-blue-600 font-semibold mb-8">Industrial Control Panel Experts</p>
+              <div className="text-lg text-gray-700 space-y-2">
+                <p><strong>Phone:</strong> <a href="tel:+919488233115" className="text-blue-600 hover:underline">+91 94882 33115</a></p>
+                <p><strong>Location:</strong> Coimbatore, Tamil Nadu, 641001, India</p>
+              </div>
              
 
             </div>
