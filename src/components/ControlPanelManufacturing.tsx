@@ -46,11 +46,8 @@ const ControlPanelManufacturing = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/electrical-engineering-services" className="bg-amber-500 text-slate-900 px-8 py-3 rounded-md hover:bg-amber-400 font-bold transition-colors duration-300 shadow-lg">
+              <Link href="/contact-us" className="bg-amber-500 text-slate-900 px-8 py-3 rounded-md hover:bg-amber-400 font-bold transition-colors duration-300 shadow-lg">
                 View Our Solutions
-              </Link>
-              <Link href="/electrical-engineering-services/control-panel-design" className="border-2 border-slate-300 text-slate-700 px-8 py-3 rounded-md hover:bg-slate-100 font-bold transition-colors duration-300">
-                Control Panel Design
               </Link>
             </div>
           </div>

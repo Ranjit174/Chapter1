@@ -47,9 +47,6 @@ const Hero = () => {
           <Link href="/contact-us" className="bg-amber-500 text-slate-900 px-8 py-3 rounded-md hover:bg-amber-400 font-bold transition-colors duration-300 shadow-lg">
             Request a Quote
           </Link>
-          <Link href="/services" className="border-2 border-slate-500 text-white px-8 py-3 rounded-md hover:bg-slate-700 font-bold transition-colors duration-300">
-            Explore All Services
-          </Link>
         </div>
       </div>
     </section>
