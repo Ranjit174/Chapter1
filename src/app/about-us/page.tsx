@@ -283,7 +283,7 @@ const AboutUsPage = () => {
                 The IndustrialTEK Advantage
               </div>
               <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-                Why Industry Leaders Choose iAutomation
+                Why Industry Leaders Choose IndustrialTEK
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Our consultative approach combines deep industry knowledge with proven engineering excellence. We don&apos;t just fulfill specifications—we optimize solutions to deliver superior value, reliability, and performance.
@@ -311,7 +311,7 @@ const AboutUsPage = () => {
             <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-8 rounded-2xl shadow-2xl">
               <h3 className="text-2xl font-bold mb-4">Ready to Partner with Excellence?</h3>
               <p className="text-blue-100 mb-6 leading-relaxed">
-                Whether your internal electrical resources are stretched thin or you&apos;re seeking a proven outsource partner, iAutomation delivers the experience and reliability you need.
+                Whether your internal electrical resources are stretched thin or you&apos;re seeking a proven outsource partner, IndustrialTEK delivers the experience and reliability you need.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -334,7 +334,7 @@ const AboutUsPage = () => {
           <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-3xl p-12 lg:p-16 text-center shadow-2xl">
             <h2 className="text-4xl font-bold mb-6">Your Trusted Industrial Engineering Partner</h2>
             <p className="text-xl max-w-3xl mx-auto mb-8 text-orange-100 leading-relaxed">
-              Join the hundreds of companies who rely on iAutomation for mission-critical electrical engineering solutions. Experience the difference that 24+ years of specialized expertise makes.
+              Join the hundreds of companies who rely on IndustrialTEK for mission-critical electrical engineering solutions. Experience the difference that 24+ years of specialized expertise makes.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
               <Link 
@@ -342,12 +342,6 @@ const AboutUsPage = () => {
                 className="bg-white text-orange-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex-1 text-center"
               >
                 Get Started Today
-              </Link>
-              <Link 
-                href="/quote" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-orange-600 transition-all duration-300 flex-1 text-center"
-              >
-                Request Quote
               </Link>
             </div>
             <p className="text-orange-200 text-sm mt-4">

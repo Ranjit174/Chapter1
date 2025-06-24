@@ -58,7 +58,7 @@ const EngineeringServicesPage = () => {
   const capabilities = [
     { title: "Custom Integration", desc: "Tailored solutions for unique industrial requirements" },
     { title: "AutoCAD Electrical", desc: "Precision design and comprehensive documentation" },
-    { title: "PLC Programming", desc: "Allen-Bradley certified expertise and implementation" },
+    { title: "PLC Programming", desc: "Certified expertise and implementation" },
     { title: "Project Management", desc: "Dedicated support throughout project lifecycle" },
     { title: "Quality Assurance", desc: "Comprehensive validation and verification processes" },
     { title: "Technical Support", desc: "Ongoing maintenance and troubleshooting services" }

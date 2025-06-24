@@ -18,7 +18,7 @@ const Testimonials = () => {
               Your Control Panels Must Be Safe and Dependable
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              At iAutomation, we build partnerships on a foundation of honesty and integrity. As a UL 508A listed and ISO 9000 compliant panel shop, you can have peace of mind that your investment will contribute to your company&apos;s long-term success.
+              At IndustrialTek, we build partnerships on a foundation of honesty and integrity you can have peace of mind that your investment will contribute to your company&apos;s long-term success.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg text-center">
@@ -35,7 +35,7 @@ const Testimonials = () => {
               </div>
             </div>
             <Link href="/about-us" className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 font-bold transition-colors duration-300">
-              About iAutomation
+              About IndustrialTek
             </Link>
           </div>
           <div className="relative h-80 md:h-96">

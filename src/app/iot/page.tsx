@@ -72,9 +72,6 @@ const IoTPage = () => {
             <a href="/contact-us" className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-red-700 transition-all">
               Start Your IIoT Project
             </a>
-            <a href="/case-studies" className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-red-600 transition-all">
-              See Our Success Stories
-            </a>
           </div>
         </div>
       </section>
@@ -193,12 +190,6 @@ const IoTPage = () => {
               className="inline-block bg-white text-red-600 px-10 py-4 rounded-lg font-bold shadow-lg text-lg hover:bg-gray-200 transition-all"
             >
               Request a Free Consultation
-            </a>
-            <a 
-              href="/case-studies"
-              className="inline-block border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-600 transition-all"
-            >
-              View IIoT Case Studies
             </a>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Customer Success Stories | IndustrialTEK Automation Solutions",
@@ -210,12 +211,9 @@ const TestimonialsPage = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg">
+            <Link href="/contact-us" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg">
               Schedule Consultation
-            </button>
-            <button className="bg-transparent border-2 border-slate-600 hover:border-slate-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              Download Case Studies
-            </button>
+            </Link>
           </div>
           
           <div className="mt-8 pt-8 border-t border-slate-800 text-slate-400">
@@ -237,7 +235,7 @@ const TestimonialsPage = () => {
                 </svg>
               </div>
               <div className="font-bold text-slate-900 text-lg">Proven Expertise</div>
-              <div className="text-slate-600">Over 10 years specializing in industrial automation solutions</div>
+              <div className="text-slate-600">Over 8+ years specializing in industrial automation solutions</div>
             </div>
             <div className="space-y-4">
               <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto">
