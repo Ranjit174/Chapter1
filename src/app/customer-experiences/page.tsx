@@ -146,12 +146,12 @@ const TestimonialsPage = () => {
                     {testimonial.avatar}
                   </div>
                   <div className="flex-1">
-                    <div className="font-bold text-slate-900 text-lg">{testimonial.author}</div>
-                    <div className="text-blue-600 font-semibold">{testimonial.title}</div>
-                    <div className="text-slate-600">{testimonial.company}</div>
+                    <div className="font-bold text-slate-900 text-base sm:text-lg">{testimonial.author}</div>
+                    <div className="text-blue-600 font-semibold text-sm sm:text-base">{testimonial.title}</div>
+                    <div className="text-slate-600 text-sm">{testimonial.company}</div>
                   </div>
                   <div className="flex-shrink-0">
-                    <div className="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm font-medium">
+                    <div className="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-medium">
                       {testimonial.industry}
                     </div>
                   </div>

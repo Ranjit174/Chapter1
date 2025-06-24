@@ -137,7 +137,7 @@ const IoTPage = () => {
             </div>
             <div className="relative">
               <Image
-                src="/fleet management.jpg"
+                src="/oee_dash.png"
                 alt="IIoT Dashboard showing industrial data"
                 width={800}
                 height={600}

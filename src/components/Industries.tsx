@@ -4,7 +4,7 @@ const industries = [
   {
     name: 'CNC Retrofitting',
     image: '/component machining.jpg',
-    description: 'Comprehensive CNC controller upgrades for VMCs, HMCs, and turning centers with Siemens-828D, Fagor-8055i, Delta-NC300, Mitsubishi-E8, and Fanuc systems.'
+    description: 'Comprehensive CNC controller upgrades for VMCs,HMCs and Turning centers with Siemens-828D, Fagor-8055,Delta, Mitsubishi and Fanuc systems.'
   },
   {
     name: 'SPM Machine Development',
@@ -14,12 +14,12 @@ const industries = [
   {
     name: 'R&D Support & Innovation',
     image: '/digitaltwin.jpg',
-    description: 'Product testing, validation, compliance verification, and comprehensive lifecycle testing with durability assessment and manufacturing readiness validation for industrial systems.'
+    description: 'Product testing, validation, compliance verification, and comprehensive lifecycle testing with durability assessment for industrial systems.'
   },
   {
     name: 'Product Validation & Testing',
     image: '/ateq-1111.jpg',
-    description: 'Advanced product validation machines and testing systems including dry leak testing, PPR testing, and cylinder performance validation solutions.'
+    description: 'Advanced product validation machines and testing systems including dry leak testing, product failure testing, visual inspection and performance validation solutions.'
   },
   {
     name: 'Jig & Fixture Design',
@@ -34,7 +34,7 @@ const industries = [
   {
     name: 'Precision Machining Solutions',
     image: '/machinening.jpg',
-    description: 'CNC machining expertise with retrofitting capabilities for VMCs, HMCs, turning centers, and surface grinding machines across multiple platforms.'
+    description: 'CNC precision machining components including shafts, gears, brackets, housings, flanges, bushings, and custom fabricated parts across multiple platforms.'
   },
   {
     name: 'Product Design & Development',
@@ -92,7 +92,7 @@ const Industries = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-amber-400 mb-2">8+</div>
-              <div className="text-slate-300">Years of Project Leadership Experience</div>
+              <div className="text-slate-300">Years of Project  Experience</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-amber-400 mb-2">25%</div>
