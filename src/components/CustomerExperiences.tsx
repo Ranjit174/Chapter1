@@ -29,14 +29,14 @@ const CustomerExperiences = () => {
             <blockquote className="text-lg text-slate-700 italic mb-6">
               &quot;Industrial Tek isn&apos;t just a vendor; they are a true extension of our engineering team. Their attention to detail and commitment to our project&apos;s success was evident from day one. They delivered a robust solution that has significantly improved our production uptime.&quot;
             </blockquote>
-            <div className="font-bold text-slate-800 text-right">
-              — Agustin, Operations Manager
-              <p className="text-sm font-normal text-slate-500">Tussor Machine Tools.</p>
-            </div>
-            <div className="mt-8">
-                <Link href="/about-us" className="bg-slate-800 text-white px-8 py-3 rounded-md hover:bg-slate-900 font-bold transition-colors duration-300">
-                Learn More About Our Approach
-                </Link>
+            <div className="flex flex-col sm:flex-row justify-between items-center mt-8 gap-6">
+              <div className="font-bold text-slate-800 text-right">
+                — Agustin, Operations Manager
+                <p className="text-sm font-normal text-slate-500">Tussor Machine Tools.</p>
+              </div>
+              <Link href="/about-us" className="bg-slate-800 text-white px-8 py-3 rounded-md hover:bg-slate-900 font-bold transition-colors duration-300 whitespace-nowrap">
+                  Learn More About Our Approach
+              </Link>
             </div>
           </div>
         </div>
