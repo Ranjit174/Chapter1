@@ -261,7 +261,7 @@ const EngineeringServicesPage = () => {
               <Link href="/contact-us" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold text-lg transition-colors duration-300">
                 Schedule Consultation
               </Link>
-              <Link href="/portfolio" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded font-semibold text-lg transition-all duration-300">
+              <Link href="/about-us" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded font-semibold text-lg transition-all duration-300">
                 View Portfolio
               </Link>
             </div>
