@@ -13,7 +13,7 @@ const industries = [
   },
   {
     name: 'R&D Support & Innovation',
-    image: '/digitaltwin.jpg',
+    image: '/digitaltwin.PNG',
     description: 'Product testing, validation, compliance verification, and comprehensive lifecycle testing with durability assessment for industrial systems.'
   },
   {
