@@ -3,7 +3,7 @@ import Image from 'next/image';
 const industries = [
   {
     name: 'CNC Retrofitting',
-    image: '/component machining.jpg',
+    image: '/retro.jpg',
     description: 'Comprehensive CNC controller upgrades for VMCs,HMCs and Turning centers with Siemens-828D, Fagor-8055,Delta, Mitsubishi and Fanuc systems.'
   },
   {
@@ -33,7 +33,7 @@ const industries = [
   },
   {
     name: 'Precision Machining Solutions',
-    image: '/machinening.jpg',
+    image: '/component machining.jpg',
     description: 'CNC precision machining components including shafts, gears, brackets, housings, flanges, bushings, and custom fabricated parts across multiple platforms.'
   },
   {
