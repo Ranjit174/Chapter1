@@ -23,7 +23,7 @@ const industries = [
   },
   {
     name: 'Jig & Fixture Design',
-    image: '/jig and fixtures design (2).jpg',
+    image: '/fix2.JPG',
     description: 'Precision jig and fixture development using SolidWorks and AutoCAD for manufacturing optimization and quality assurance applications.'
   },
   {
@@ -38,7 +38,7 @@ const industries = [
   },
   {
     name: 'Product Design & Development',
-    image: '/productdesign.jpg',
+    image: '/Capture3.JPG',
     description: 'Complete product design solutions with electrical control panel design, servo motor selection, and pneumatic/hydraulic system integration.'
   },
 ];
